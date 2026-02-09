@@ -286,7 +286,7 @@ a {
 }
 
 .email-link {
-    font-size: 1.5rem; /* Mobile first size */
+    font-size: 1.0rem; /* Mobile first size */
     font-family: var(--font-head);
     font-weight: 800;
     border-bottom: 2px solid var(--accent-color);
@@ -424,4 +424,5 @@ body {
 /* Stagger delay for stats or grid items if desired */
 .stat-item:nth-child(2) { transition-delay: 0.2s; }
 .project-card:nth-child(2) { transition-delay: 0.2s; }
+
 .project-card:nth-child(3) { transition-delay: 0.4s; }
