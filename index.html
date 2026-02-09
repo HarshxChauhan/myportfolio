@@ -3,40 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        /* CSS: This makes the site look pretty */
-        body { font-family: sans-serif; margin: 0; text-align: center; background: #f4f4f9; }
-        header { background: #333; color: white; padding: 50px 20px; }
-        .container { padding: 50px 20px; max-width: 800px; margin: auto; }
-        .btn { background: #ff4757; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px; font-size: 16px; }
-        .btn:hover { background: #ff6b81; }
-        #message { margin-top: 20px; font-weight: bold; color: #2ed573; }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Harsh Chauhan | Visual Artist & Designer</title>
+    <meta name="description" content="Portfolio of Harsh Chauhan. Award-winning visual art, UI/UX design, and creative direction. Exploring the intersection of digital brutalism and elegance.">
+    <meta name="keywords" content="Harsh Chauhan, Digital Art, UI/UX Design, Creative Portfolio, Visual Artist, Brutalist Web Design">
+    <meta name="author" content="Harsh Chauhan">
+    <link rel="canonical" href="https://www.harshchauhan.art/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.harshchauhan.art/">
+    <meta property="og:title" content="Harsh Chauhan | Visual Artist & Designer">
+    <meta property="og:description" content="Immersive portfolio of Harsh Chauhan. Where aesthetic meets edgy.">
+    <meta property="og:image" content="https://www.harshchauhan.art/assets/og-image.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.harshchauhan.art/">
+    <meta property="twitter:title" content="Harsh Chauhan | Visual Artist & Designer">
+    <meta property="twitter:description" content="Immersive portfolio of Harsh Chauhan. Where aesthetic meets edgy.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Harsh Chauhan",
+      "url": "https://www.harshchauhan.art",
+      "jobTitle": "UI/UX Designer & Visual Artist",
+      "sameAs": [
+        "https://www.linkedin.com/in/harshchauhan",
+        "https://www.instagram.com/harshchauhan.art"
+      ],
+      "description": "Harsh Chauhan is a visual artist and designer specializing in edgy, aesthetic digital experiences."
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>I am a creative student.</p>
+    <header class="site-header">
+        <div class="logo">HC.ART</div>
+        <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-icon">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#hero">Start</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <h2>About Me</h2>
-        <p>Hi! I'm a student and love to try different things </p>
-        
-        <!-- JS Trigger -->
-        <button class="btn" onclick="sayHello()">Click for a surprise!</button>
-        <p id="message"></p>
-    </div>
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <p class="subtitle">Visual Identity & Experience</p>
+                <h1 class="glitch" data-text="HARSH CHAUHAN">HARSH CHAUHAN</h1>
+                <p class="intro-text">
+                    Crafting digital chaos into <span class="highlight">structured elegance</span>. 
+                    Based in the void between art and code.
+                </p>
+                <a href="#work" class="cta-button">View Selected Works</a>
+            </div>
+        </section>
 
-    <script>
-        // JS: This adds interaction
-        function sayHello() {
-            const msg = document.getElementById('message');
-            msg.innerText = "Thanks for visiting! Let's build something great together. 🚀";
-        }
-    </script>
+        <section id="work" class="portfolio-section">
+            <h2 class="section-title">Selected Works</h2>
+            <div class="masonry-grid">
+                <article class="project-card" itemscope itemtype="https://schema.org/VisualArtwork">
+                    <div class="card-image-wrapper">
+                        <div class="placeholder-img"></div> </div>
+                    <div class="card-info">
+                        <h3 itemprop="name">Neon Dystopia</h3>
+                        <p itemprop="artMedium">UI Design / 3D</p>
+                    </div>
+                </article>
+                
+                <article class="project-card tall" itemscope itemtype="https://schema.org/VisualArtwork">
+                    <div class="card-image-wrapper">
+                        <div class="placeholder-img"></div>
+                    </div>
+                    <div class="card-info">
+                        <h3 itemprop="name">Silence in Noise</h3>
+                        <p itemprop="artMedium">Brand Identity</p>
+                    </div>
+                </article>
 
+                <article class="project-card" itemscope itemtype="https://schema.org/VisualArtwork">
+                    <div class="card-image-wrapper">
+                        <div class="placeholder-img"></div>
+                    </div>
+                    <div class="card-info">
+                        <h3 itemprop="name">Void Walker</h3>
+                        <p itemprop="artMedium">Creative Dev</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">The Artist</h2>
+                    <p>I don't just design interfaces; I curate moods. My work explores the tension between brutalist utility and high-end aesthetics.</p>
+                    <p>Specializing in <strong>Web3 interfaces</strong>, <strong>editorial layouts</strong>, and <strong>interactive art</strong>.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="number">05+</span>
+                        <span class="label">Years Exp</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="number">20+</span>
+                        <span class="label">Awards</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Initiate Protocol</h2>
+            <p>Ready to break the grid? Let's build something loud.</p>
+            <a href="mailto:hello@harshchauhan.art" class="email-link">hello@harshchauhan.art</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Harsh Chauhan. All Rights Reserved.</p>
+            <div class="socials">
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Behance</a>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
 </body>
 </html>
